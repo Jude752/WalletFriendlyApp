@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="show" type="id" />
+    <item name="notes_edit_text" type="id" />
+    <item name="imagesLayout" type="id" />
+</resources>

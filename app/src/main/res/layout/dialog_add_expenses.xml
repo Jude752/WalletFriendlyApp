@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title for the expenses input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Expenses"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <!-- EditText for entering the expenses amount -->
+    <EditText
+        android:id="@+id/editTextDialogExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter expenses amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <!-- Spinner for selecting the expense category -->
+    <Spinner
+        android:id="@+id/spinnerExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/expense_categories"
+        android:minHeight="48dp"
+        android:prompt="@string/expense_category_prompt" />
+
+</LinearLayout>

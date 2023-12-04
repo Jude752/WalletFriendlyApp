@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewsActivity">
+
+    <!-- Other UI elements -->
+
+    <!-- ScrollView to contain the announcements -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- LinearLayout to vertically stack the announcements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Announcement 1 -->
+            <TextView
+                android:id="@+id/tvAnnouncementTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/theme"
+                android:text="App Updates" />
+
+            <TextView
+                android:id="@+id/tvAnnouncementDate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="June 15, 2023" />
+
+            <TextView
+                android:id="@+id/tvAnnouncementContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are excited to announce the release of version 2.0 of our budget planning app. This update includes a redesigned user interface, improved performance, and new features such as expense tracking and bill reminders." />
+
+            <!-- Add space between announcements -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Announcement 2 -->
+            <TextView
+                android:id="@+id/tvAnnouncementTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/theme"
+                android:textSize="20sp"
+                android:text="Service Interruption" />
+
+            <TextView
+                android:id="@+id/tvAnnouncementDate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="June 20, 2023" />
+
+            <TextView
+                android:id="@+id/tvAnnouncementContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please be advised that there will be a scheduled maintenance on June 20, 2023, from 10:00 PM to 11:00 PM. During this time, certain features of the app may be temporarily unavailable. We apologize for any inconvenience caused." />
+
+            <!-- Add space between announcements -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- Announcement 3 -->
+            <TextView
+                android:id="@+id/tvAnnouncementTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/theme"
+                android:textSize="20sp"
+                android:text="Financial Tips and Advice" />
+
+            <TextView
+                android:id="@+id/tvAnnouncementDate3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="June 25, 2023" />
+
+            <TextView
+                android:id="@+id/tvAnnouncementContent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Learn how to save money, budget effectively, and make smart financial decisions with our latest articles and videos. Visit the Financial Tips and Advice section regularly to stay updated and improve your financial well-being." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

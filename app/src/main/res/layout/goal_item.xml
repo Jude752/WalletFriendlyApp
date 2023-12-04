@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- TextView to display the budget number -->
+    <TextView
+        android:id="@+id/textViewBudgetNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <!-- TextView for the food goal -->
+    <TextView
+        android:id="@+id/textViewFoodGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <!-- TextView for the rental goal -->
+    <TextView
+        android:id="@+id/textViewRentalGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <!-- TextView for the bills goal -->
+    <TextView
+        android:id="@+id/textViewBillsGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <!-- TextView for the transportation goal -->
+    <TextView
+        android:id="@+id/textViewTransportationGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <!-- TextView for the other goal -->
+    <TextView
+        android:id="@+id/textViewOtherGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <!-- TextView for the total goal -->
+    <TextView
+        android:id="@+id/textViewTotalGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

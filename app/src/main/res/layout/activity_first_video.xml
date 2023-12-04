@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6"
+    tools:context=".FirstVideoActivity">
+
+    <!-- VideoView to display the video -->
+    <VideoView
+        android:id="@+id/video1"
+        android:layout_width="412dp"
+        android:layout_height="303dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginBottom="227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TextView to display the title of the video -->
+    <TextView
+        android:id="@+id/tvTitleVideo"
+        android:layout_width="375dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="503dp"
+        android:ems="10"
+        android:text="What is Budgeting"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Button to navigate to the next video -->
+    <Button
+        android:id="@+id/btnNextVideo"
+        android:layout_width="285dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="117dp"
+        android:backgroundTint="@color/theme"
+        android:onClick="openVideo2"
+        android:text="Next video>>>"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

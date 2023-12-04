@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg8"
+    tools:context=".ExpensesAndIncomeActivity">
+
+    <!-- Expenses Container -->
+    <LinearLayout
+        android:id="@+id/expensesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Expenses Title -->
+        <TextView
+            android:id="@+id/textViewExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Expenses Amount -->
+            <EditText
+                android:id="@+id/editTextExpenses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter expenses amount"
+                android:inputType="numberDecimal"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!-- Expenses Categories Spinner -->
+            <Spinner
+                android:id="@+id/spinnerExpenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/expense_categories"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Spacer View -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Income Container -->
+    <LinearLayout
+        android:id="@+id/incomeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Income Title -->
+        <TextView
+            android:id="@+id/textViewIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <!-- Income Amount -->
+        <EditText
+            android:id="@+id/editTextIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter income amount"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <!-- Spacer View -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Balance Container -->
+    <LinearLayout
+        android:id="@+id/balanceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Balance Title -->
+        <TextView
+            android:id="@+id/tVBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <!-- Balance Value -->
+        <TextView
+            android:id="@+id/tVBalanceValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+
+        <!-- Budget Title -->
+        <TextView
+            android:id="@+id/tVBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <!-- Budget Value -->
+        <TextView
+            android:id="@+id/tVBudgetValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Clear Transactions Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/red"
+            android:text="Clear Transactions"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+    <!-- Add Expenses and Add Income Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnExpenses"
+            android:layout_width="146dp"
+            android:layout_height="73dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/theme"
+            android:text="Add Expenses"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnIncome"
+            android:layout_width="142dp"
+            android:layout_height="81dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/theme"
+            android:text="Add Income"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

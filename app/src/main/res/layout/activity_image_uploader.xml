@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg7"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ImageUploader">
+
+    <!-- ImageView for uploading image -->
+    <ImageView
+        android:id="@+id/UploadImage"
+        android:layout_width="262dp"
+        android:layout_height="244dp"
+        android:background="@drawable/border"
+        android:src="@drawable/upload_image" />
+
+    <!-- TextView for displaying instructions -->
+    <TextView
+        android:id="@+id/TvReceiptTitle"
+        android:layout_width="337dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="12dp"
+        android:text="Drop your receipts in the above area, you won't lose track of your budget plan!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- TextView for viewing receipts -->
+    <TextView
+        android:id="@+id/btnReceipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp"
+        android:text="Click here to view your receipts"
+        android:textAlignment="center"
+        android:textColor="@color/theme"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

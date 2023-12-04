@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Wallet Friendly</string>
+    <string name="title_activity_map_find">MapFind</string>
+    <string name="expense_category_prompt">Select expense category</string>
+    <string name="audio_recorder">Audio Recorder</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="play_recording">Play Recording</string>
+    <string name="stop_playing">Stop Playing</string>
+    <string name="status">Status</string>
+
+
+    <string-array name="expense_categories">
+        <item>Food</item>
+        <item>Rental</item>
+        <item>Bills</item>
+        <item>Transportation</item>
+        <item>Other</item>
+    </string-array>
+</resources>

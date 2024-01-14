@@ -30,6 +30,30 @@ The WALLET-FRIENDLY budgeting application aims to provide users with the followi
 
 - **Better visibility into spending patterns:** Users can easily monitor their expenses and identify areas where they can reduce spending.
 
+### Installation
+
+To install the WALLET-FRIENDLY budgeting application, follow these steps:
+
+1. Clone the repository to your local machine.
+    ```bash
+    git clone https://github.com/your-username/WalletFriendlyApp.git
+    ```
+
+2. Navigate to the project directory.
+    ```bash
+    cd wallet-friendly
+    ```
+
+3. Install the necessary dependencies.
+    ```bash
+    npm install   # or yarn install
+    ```
+
+4. Run the application.
+    ```bash
+    npm start     # or yarn start
+    ```
+
 - **Effective savings strategies:** By setting savings goals and tracking progress, users are motivated to save and build a stronger financial future.
 
 - **Reduced risk of financial difficulties:** With a clear overview of their finances, users can avoid overspending and make informed financial decisions.
